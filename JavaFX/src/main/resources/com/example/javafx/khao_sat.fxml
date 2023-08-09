@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import com.sun.javafx.scene.control.IntegerField?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.shape.Line?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javafx.Kstt_Controller"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox alignment="CENTER">
+        <HBox>
+            <Label text="Name: "/>
+            <TextField fx:id="name"/>
+        </HBox>
+        <HBox>
+            <Label text="Class: "/>
+            <TextField fx:id="clas"/>
+        </HBox>
+        <HBox>
+            <Label text="Gender: "/>
+        <RadioButton selected="true" text="male" fx:id="male">
+            <toggleGroup>
+                <ToggleGroup fx:id="toggleGroup" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton text="female" toggleGroup="$toggleGroup" fx:id="female" />
+        </HBox>
+        <HBox>
+            <Label text="Date: "/>
+            <DatePicker fx:id="myDate" layoutX="213.0" layoutY="188.0"  />
+        </HBox>
+        <HBox>
+            <Label text="Nhập SDT: "/>
+            <TextField fx:id="sdt"/>
+        </HBox>
+        <Button  text="Confirm" onAction="#onclick"/>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javafx.BKT_controller">
+    <VBox>
+        <Label text="Câu 1: Ai là người em thích nhất??"/>
+        <RadioButton selected="false" fx:id="a" text="A. Haa2k4">
+            <toggleGroup>
+                <ToggleGroup fx:id="toggleGroup"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton text="B.Haa2k4" fx:id="b" toggleGroup="$toggleGroup"/>
+        <RadioButton text="C.Haa2k4" fx:id="c" toggleGroup="$toggleGroup"/>
+        <RadioButton text="D.Haa2k4" fx:id="d" toggleGroup="$toggleGroup"/>
+        <Label  text="Câu 2: Ai là người đẹp trai nhất??"/>
+        <RadioButton selected="false" fx:id="a1" text="A. Haa2k4">
+            <toggleGroup>
+                <ToggleGroup fx:id="toggleGroup2"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton text="B. Haa2k4" fx:id="b1" toggleGroup="$toggleGroup2"/>
+        <RadioButton text="C. Haa2k4" fx:id="c1" toggleGroup="$toggleGroup2"/>
+        <RadioButton text="D. Haa2k4" fx:id="d1" toggleGroup="$toggleGroup2"/>
+        <Button onAction="#submit" text="Submit"/>
+        <Label fx:id="textLabel" text=""/>
+        <Label fx:id="textLabel2" text=""/>
+    </VBox>
+
+</AnchorPane>
